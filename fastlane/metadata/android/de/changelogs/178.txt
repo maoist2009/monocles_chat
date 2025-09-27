@@ -1,0 +1,3 @@
+* Aktualisiere Übersetzungen
+* Füge standard Hintergrund wieder hinzu
+* Verbessere Höhe des Eingabefelds

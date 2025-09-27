@@ -1,0 +1,34 @@
+* Default autofill message to false
+* Update enabled TLS ciphers 
+* Add option to enforce secure TLS ciphers
+* Add option to prefer IPv6
+* Show metadata of audio files when available
+* Fix year in about
+* Add active indicator to contacts list
+* Show user count in channel discovery
+* Option for colored usernames in group chats
+* Automatically activate show own account when adding further accounts
+* Add margin to reactions in sent and received messages
+* Fix and improve voice recording, default to opus
+* Default to automatic backups once the day
+* Default to store files in cache
+* Beta option to collapse text messages longer than 8 lines 
+* Add option to restrict avatar access model to contacts
+* Fix appearing emoji popup when clicked on link
+* Correct muc participants string
+* Change files and backup folder to Documents/monocles chat/
+* Basic support for adding by jid on group chat create
+* Adjust call integration sounds
+* Show list of used clients in contact details
+* Add option to export messages in plain text
+* Rebuild database backend
+* Further fixes
+* Remove all animations for now fixes input field lagging
+* Fix settings import and allow importing settings.dat from anywhere
+* Update translations
+* Increase font size in message bubbles, reactions and input field on user preference
+* Update translations 
+* Fix or disable reactions on MUC PM
+* Clear selected reply when starting a correction
+* No you may not reply to yourself 
+* Use correct file name when sharing media

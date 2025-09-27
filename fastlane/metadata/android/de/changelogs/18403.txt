@@ -1,0 +1,27 @@
+* Ausblenden der Schaltflächen für Sprachaufzeichnung und Bildaufnahme, wenn eine Sprachaufforderung benötigt wird
+* I2P-Unterstützung neu implementieren
+* ASUS Nexus 7 in die Liste der problematischen AEC-Geräte aufnehmen
+* Rand der Nachrichtenblasen ein wenig anpassen
+* Link-Behandlung korrigieren
+* Revert „Zeige Metadaten von Audiodateien, wenn verfügbar“ (Behebt Verzögerungen, wenn viele Audiomeldungen angezeigt werden)
+* Nenne es jetzt Leerzeichen
+* Update exoplayer2 zu media3-exoplayer
+* MessageAdapter Codebereinigung
+* Upstream-Änderungen folgen + Code-Bereinigung
+* Reparieren der Bluetooth-Erlaubnis
+* Alte Emoji-Suche entfernen
+* Sticker als Bilder senden für Kompatibilität
+* Einstellung zum automatischen Herunterladen von Bildern von jedem Link hinzufügen
+* Präsenz-Statusmeldung oben anzeigen, bei Statusänderung wieder einblenden 
+* Refactor-Fragment behebt Layout-Verzögerung
+* Animationen hinzugefügt
+* Hinzufügen des Menüpunkts „P2P erzwingen“ bei fehlgeschlagenen HTTP-Uploads
+* Refaktorierung der Backup-Wiederherstellung, um Worker anstelle eines Dienstes zu verwenden
+* Hinzufügen der Möglichkeit, einen benutzerdefinierten Sicherungsort zu wählen 
+* Behebt Abstürze
+* Versuchen, Sticker und Gifs-Ansicht in Hintergrundaufgaben zu laden 
+* Fehlendes Einstellungssymbol hinzufügen
+* Unbekanntes Omemo-Schlüssel-Symbol akzeptieren
+* Datenbank für die Migration von der Vorgängerversion vorbereiten
+* Behebung des seltenen Absturzes beim anfänglichen Laden von Stickern und GIFs
+* Standardmäßig wird das Löschen des Chats nach dem Löschen aller Nachrichten nicht aktiviert

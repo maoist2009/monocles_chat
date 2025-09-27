@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="TAG_ACCOUNT"/>
+    <item type="id" name="TAG_FINGERPRINT"/>
+    <item type="id" name="TAG_FINGERPRINT_STATUS"/>
+    <item type="id" name="TAG_AUDIO_PLAYER_VIEW_HOLDER"/>
+    <item type="id" name="swipe_listener_tag"/>
+</resources>

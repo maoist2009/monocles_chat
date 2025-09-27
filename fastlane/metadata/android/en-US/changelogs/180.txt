@@ -1,0 +1,58 @@
+* Remove empty space at bottom in tablet mode
+* Add further strings 
+* Update translations
+* Fix take photo option for choose media 
+* Allow adding another prompt after notifications 
+* Show warning bar if any account is not set to MAM always
+* Fix duplicate id error
+* Sometimes race condition here too? Try no animate
+* Catch concurrent modification and abort
+* Allow ignoring the mam pref warning
+* Do not re-notify dismissed notifications
+* Move bubble from same sender closer together
+* Improve setting to disable avatars on message bubbles
+* Pin room details to top in chat rooms
+* Add participants menu to chat rooms
+* Add note to self menu if only one account available 
+* Update translation
+* Store voice messages in cache too when store in cache activated
+* Fix custom theme preference visibility
+* Send attachments in order
+* Testing Attach voice message to input field instead of directly send
+* Context for reaction notifications
+* Clear reply after image as well as text reply
+* Seperate ring from strangers option
+* Fix appearing quick buttons when typing ":"
+* Hide emoji button when placing attachment and don't hide mic and camera
+* Adjust media preview
+* Add account from drawer
+* Reintegrate app lock
+* Try to fix crash because of spam detection
+* Default automatic backups to once per day
+* Possible fix crash when taking picture in land mode
+* Possible fix crash on older android because of regex not supported
+* Fix edited image not openable
+* Improve DNS server settings strings
+* New reactions popup
+* Improve reactions popup
+* Add setting for call integration
+* Never notify for own reactions
+* Option to hide media from gallery
+* Fix previews for data uri
+* Experimental WebXDC extensions functionality
+* VPN after active 
+* Always show thread icon in input field when activated
+* Fix for amazon.{ca,com} link previews
+* Fix crash coming back with photo
+* Fix for concurrent modification
+* Default store media not in cache
+* Add Redmi Note 12S to AAC sensitive devices list
+* Improve contact and room details
+* Add missing bubble padding
+* Add contact name under avatar in contact details 
+* Add Redmi Note 12S model code to AAC sensitive devices
+* Do not play a connection sound when establishing an audio-/videocall. Reduce volume of call integration sounds.
+* Change pinned muc subject background color
+* Old clean input field
+* Change input field text colors
+* Change arrow back drawable

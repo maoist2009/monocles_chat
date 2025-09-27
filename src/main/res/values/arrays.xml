@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<integer-array name="file_size_values">
+		<item>0</item>
+		<item>524288</item>
+		<item>1048576</item>
+		<item>3490000</item>
+		<item>5242880</item>
+		<item>10485760</item>
+		<item>52428800</item>
+	</integer-array>
+
+	<integer-array name="mute_options_durations">
+		<item>1800</item>
+		<item>3600</item>
+		<item>7200</item>
+		<item>28800</item>
+		<item>-1</item>
+	</integer-array>
+
+	<string-array name="quick_actions">
+		<item>@string/none</item>
+		<item>@string/recently_used</item>
+		<item>@string/attach_take_picture</item>
+		<item>@string/attach_record_video</item>
+		<item>@string/attach_choose_picture</item>
+		<item>@string/attach_record_voice</item>
+		<item>@string/send_location</item>
+	</string-array>
+
+	<string-array name="quick_action_values">
+		<item>none</item>
+		<item>recent</item>
+		<item>TAKE_PHOTO</item>
+		<item>RECORD_VIDEO</item>
+		<item>CHOOSE_PICTURE</item>
+		<item>RECORD_VOICE</item>
+		<item>SEND_LOCATION</item>
+	</string-array>
+
+	<string-array name="avatars_shape">
+		<item>@string/avater_shape_rounded_square</item>
+		<item>@string/avater_shape_oval</item>
+		<item>@string/avater_shape_square</item>
+	</string-array>
+
+	<string-array name="avatars_shape_values">
+		<item>rounded_square</item>
+		<item>oval</item>
+		<item>square</item>
+	</string-array>
+
+	<string-array name="picture_compression_values">
+		<item>never</item>
+		<item>auto</item>
+		<item>always</item>
+	</string-array>
+
+	<string-array name="picture_compression_entries">
+		<item>@string/never</item>
+		<item>@string/large_images_only</item>
+		<item>@string/always</item>
+	</string-array>
+
+	<string-array name="mam_prefs">
+		<item>@string/never</item>
+		<item>@string/contacts</item>
+		<item>@string/always</item>
+	</string-array>
+
+	<string-array name="grace_periods">
+		<item>@string/gp_disable</item>
+		<item>@string/gp_short</item>
+		<item>@string/gp_medium</item>
+		<item>@string/gp_long</item>
+	</string-array>
+
+	<string-array name="grace_periods_values">
+		<item>0</item>
+		<item>144</item>
+		<item>610</item>
+		<item>2584</item>
+	</string-array>
+	<integer-array name="automatic_message_deletion_values">
+		<item>0</item>
+		<item>86400</item>
+		<item>604800</item>
+		<item>2592000</item>
+		<item>15811200</item>
+	</integer-array>
+	<integer-array name="recurring_backup_values">
+		<item>0</item>
+		<item>86400</item>
+		<item>172800</item>
+		<item>604800</item>
+		<item>2592000</item>
+	</integer-array>
+	<string-array name="omemo_setting_entry_values">
+		<item>always</item>
+		<item>default_on</item>
+		<item>default_off</item>
+	</string-array>
+	<string-array name="omemo_setting_entries">
+		<item>@string/always</item>
+		<item>@string/default_on</item>
+		<item>@string/default_off</item>
+	</string-array>
+	<string-array name="video_compression_values">
+		<item>360</item>
+		<item>720</item>
+		<item>uncompressed</item>
+	</string-array>
+
+	<string-array name="video_compression_entries">
+		<item>@string/video_360p</item>
+		<item>@string/video_720p</item>
+		<item>@string/video_original</item>
+	</string-array>
+
+	<string-array name="chat_requests_entries">
+		<item>@string/never</item>
+		<item>@string/suspected_spam</item>
+		<item>@string/chats_from_strangers</item>
+	</string-array>
+
+	<string-array name="chat_requests_values">
+		<item>disable</item>
+		<item>spam</item>
+		<item>strangers</item>
+	</string-array>
+
+	<string-array name="channel_discovery_entries">
+		<item>@string/jabber_network</item>
+		<item>@string/local_server</item>
+	</string-array>
+
+	<string-array name="channel_discover_values">
+		<item>JABBER_NETWORK</item>
+		<item>LOCAL_SERVER</item>
+	</string-array>
+
+	<string-array name="voice_codec_entries">
+		<item>Opus (best)</item>
+		<item>MPEG4</item>
+		<item>3GPP</item>
+	</string-array>
+
+	<string-array name="voice_codec_values">
+		<item>opus</item>
+		<item>mpeg4</item>
+		<item>3gpp</item>
+	</string-array>
+
+	<integer-array name="track_duration_values">
+		<item>0</item>
+		<item>60</item>
+		<item>120</item>
+		<item>180</item>
+		<item>320</item>
+	</integer-array>
+</resources>

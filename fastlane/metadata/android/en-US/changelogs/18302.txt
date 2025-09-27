@@ -1,0 +1,19 @@
+* Fix inline name edit 
+* Show keyboard when starting reply
+* Add option to disable reactions fallback
+* Initial option to pin unencrypted message to top
+* Increase message reaction margin-top to 4dp
+* Initial captions to files 
+* Prevent audio feedback loop on some devices
+* Allow scanning HTTPS based invites to work
+* Show unread message count in bottom navigation
+* Setting to show links of plain chat addresses
+* Add folder for audio files
+* Implement providers list
+* Option to register to own xmpp server
+* Allow selecting text in command note
+* Ping MUCs more aggressively
+* Add delete/add contact, delete/add bookmark, leave/destroy room buttons on details view
+* New encryption lock icon
+* Updated translations
+* Fix crash when swipe to reply on a searched message

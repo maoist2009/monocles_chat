@@ -1,0 +1,35 @@
+* Deaktivieren der Anrufintegration für Android 15
+* Reaktionen mit fehlendem id-Attribut behandeln
+* Ältere Nachrichten in der DB für Reaktionen nachschlagen
+* Behebt die Frage nach der Kontaktberechtigung
+* Fotopicker auf einigen Androiden verwendet diesen Pfad
+* Aktiv nur anzeigen, wenn das Konto online und verbunden ist
+* Upgrade des miniDNS
+* Optionale Symbolleiste zur Textformatierung wieder einbauen
+* Funktion für erste Nachrichtenanfragen
+* Option zur Meldung aller Chat-Anfragen als SPAM
+* Nachrichten-ID in den Spam-Bericht aufnehmen
+* Behebung der Endlosschleife, wenn der Benutzer Benachrichtigungen verweigert
+* Deaktiviere hartkodierte DNS auf beiden Seiten
+* DNSSEC 3 mal ausprobieren
+* Dialer-Integration immer versuchen, falls aktiviert
+* Reset outputFileWrittenLatch für jede neue Sprachaufzeichnung
+* Wenn der Benutzer mit SailfishOS arbeitet, deaktivieren Sie die Anrufintegration. 
+* MiniDNS-Integration abschließen und hartcodierten DNS-Server ändern
+* Testen der Option, den DNS-Server zu ändern oder MiniDNS komplett zu deaktivieren, wenn leer
+* Krypto zum Profil hinzufügen
+* Reaktion hinzufügen“ nicht anbieten, wenn nicht teilnehmend
+* Standard-DNS-Server ändern
+* Option zum Zurücksetzen auf Standard-DNS-Server hinzufügen (möglicherweise ist derzeit ein Neustart des Telefons erforderlich)
+* Option zum Importieren und Exportieren von App-Einstellungen hinzufügen
+* Kleinere Eingabefeldtexte
+* Verbesserte Audio-Player-Symbole für Touch-Verfügbarkeit
+* Schaltfläche bei Videoanrufen nach Zeitüberschreitung ausblenden
+* Fix und Verbesserung des Hinweises auf private Nachrichten
+* Fettgedruckte Nicknames in Nachrichtenblasen
+* Hinzufügen weiterer Strings
+* Option zum Deaktivieren der benutzerdefinierten Registerkarte
+* Experimentelle Datenexportoption
+* Bessere Version der Link-Bewegungsmethode aktualisiert
+* Versuch, gelegentliche Sortierabstürze zu beheben
+* Aktualisiere Übersetzungen

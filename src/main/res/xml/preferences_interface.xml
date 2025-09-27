@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_theme_title">
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="dynamic_colors"
+            android:summary="@string/pref_dynamic_colors_summary"
+            android:title="@string/pref_dynamic_colors" />
+        <ListPreference
+            android:defaultValue="@string/theme"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes_values"
+            android:icon="@drawable/ic_dark_mode_24dp"
+            android:key="theme"
+            android:title="@string/pref_theme_title"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@drawable/ic_dark_mode_24dp"
+            android:key="custom_theme_automatic"
+            android:title="@string/follow_system_dark_mode" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_dark_mode_24dp"
+            android:key="custom_theme_dark"
+            android:title="@string/custom_theme_is_dark" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_theme_color_match"
+            android:title="@string/color_match"
+            android:summary="@string/stay_true_to_my_color_inputs" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_theme_primary"
+            android:title="@string/custom_primary_color"
+            android:defaultValue="@color/md_theme_light_primary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_theme_primary_dark"
+            android:title="@string/custom_secondary_color"
+            android:defaultValue="@color/md_theme_light_secondary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_theme_accent"
+            android:title="@string/custom_tertiary_color"
+            android:defaultValue="@color/md_theme_light_tertiary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_theme_background_primary"
+            android:title="@string/custom_background_color"
+            android:defaultValue="@color/md_theme_light_surface"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_dark_theme_primary"
+            android:title="@string/custom_primary_color"
+            android:defaultValue="@color/md_theme_dark_primary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_dark_theme_primary_dark"
+            android:title="@string/custom_secondary_color"
+            android:defaultValue="@color/md_theme_dark_secondary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_dark_theme_accent"
+            android:title="@string/custom_tertiary_color"
+            android:defaultValue="@color/md_theme_dark_tertiary"
+            app:colorpicker_showAlpha="false" />
+        <com.rarepebble.colorpicker.ColorPreference
+            android:icon="@drawable/ic_palette_24dp"
+            android:key="custom_dark_theme_background_primary"
+            android:title="@string/custom_background_color"
+            android:defaultValue="@color/md_theme_dark_surface"
+            app:colorpicker_showAlpha="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/appearance">
+        <Preference
+            android:key="import_background"
+            android:icon="@drawable/ic_image_24dp"
+            android:summary="@string/pref_chat_background_summary"
+            android:title="@string/custom_background" />
+        <Preference
+            android:key="delete_background"
+            android:icon="@drawable/ic_delete_24dp"
+            android:summary="@string/pref_delete_background_summary"
+            android:title="@string/delete_background" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/use_unicolored_chatbg"
+            android:icon="@drawable/rounded_hide_image_24"
+            android:key="unicolored_chatbg"
+            android:summary="@string/pref_use_unicolored_chatbg_summary"
+            android:title="@string/pref_use_unicolored_chatbg" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_own_accounts"
+            android:icon="@drawable/ic_person_24dp"
+            android:key="show_own_accounts"
+            android:summary="@string/pref_show_own_accounts_summary"
+            android:title="@string/pref_show_own_accounts" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/pinned_status_message"
+            android:icon="@drawable/rounded_info_24"
+            android:key="pinned_status_message"
+            android:summary="@string/pref_pinned_status_message_summary"
+            android:title="@string/pref_pinned_status_message" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/use_colored_muc_names"
+            android:icon="@drawable/rounded_format_color_text_24"
+            android:key="colored_muc_names"
+            android:summary="@string/pref_use_colored_muc_names_summary"
+            android:title="@string/pref_use_colored_muc_names" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_nav_bar"
+            android:key="show_nav_bar"
+            android:icon="@drawable/rounded_bottom_navigation_24"
+            android:summary="@string/pref_show_navigation_bar_summary"
+            android:title="@string/pref_show_navigation_bar" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_nav_drawer"
+            android:key="show_nav_drawer"
+            android:icon="@drawable/menu_24dp"
+            android:summary="@string/pref_show_show_nav_drawer_summary"
+            android:title="@string/pref_show_show_nav_drawer" />
+        <ListPreference
+            android:defaultValue="@string/avatar_shape"
+            android:icon="@drawable/rounded_account_circle_24"
+            android:key="avatar_shape"
+            android:entries="@array/avatars_shape"
+            android:entryValues="@array/avatars_shape_values"
+            android:summary="@string/pref_avatar_shape_summary"
+            android:title="@string/pref_avatars_shape" />
+        <Preference
+            android:icon="@drawable/ic_forum_24dp"
+            app:fragment="eu.siacs.conversations.ui.fragment.settings.InterfaceBubblesSettingsFragment"
+            app:summary="@string/pref_chat_bubbles_summary"
+            app:title="@string/pref_chat_bubbles" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/large_font"
+            android:icon="@drawable/ic_format_size_24dp"
+            android:key="large_font"
+            android:summary="@string/pref_large_font_summary"
+            android:title="@string/pref_large_font" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_dynamic_tags"
+            android:icon="@drawable/ic_label_24dp"
+            android:key="show_dynamic_tags"
+            android:summary="@string/pref_show_dynamic_tags_summary"
+            android:title="@string/pref_show_dynamic_tags" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_link_previews"
+            android:icon="@drawable/rounded_link_24"
+            android:key="show_link_previews"
+            android:summary="@string/show_link_previews_summary"
+            android:title="@string/show_link_previews" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/plain_text_links"
+            android:icon="@drawable/rounded_link_24"
+            android:key="plain_text_links"
+            android:summary="@string/pref_plain_text_links_summary"
+            android:title="@string/pref_plain_text_links_title" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/set_text_collapsable"
+            android:icon="@drawable/ic_keyboard_double_arrow_down_24dp"
+            android:key="set_text_collapsable"
+            android:summary="@string/pref_set_text_collapsable_summary"
+            android:title="@string/pref_set_text_collapsable" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_operating_system">
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/allow_screenshots"
+            android:icon="@drawable/ic_screenshot_24dp"
+            android:key="allow_screenshots"
+            android:summary="@string/pref_allow_screenshots_summary"
+            android:title="@string/pref_allow_screenshots" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/default_custom_tab"
+            android:icon="@drawable/browse_24dp"
+            android:key="custom_tab"
+            android:summary="@string/pref_custom_tab_summary"
+            android:title="@string/pref_custom_tab" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/swipe_to_archive"
+            android:icon="@drawable/ic_archive_24dp"
+            android:key="swipe_to_archive"
+            android:summary="@string/pref_swipe_to_archive_summary"
+            android:title="@string/pref_swipe_to_archive_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_input_options">
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_thread_feature"
+            android:key="show_thread_feature"
+            android:icon="@drawable/thread_hint"
+            android:summary="@string/pref_show_thread_feature_summary"
+            android:title="@string/pref_show_thread_feature" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/showtextformatting"
+            android:key="showtextformatting"
+            android:icon="@drawable/rounded_format_bold_24"
+            android:summary="@string/pref_showtextformatting_sum"
+            android:title="@string/pref_showtextformatting" />
+        <ListPreference
+            android:defaultValue="@string/quick_action"
+            android:dialogTitle="@string/choose_quick_action"
+            android:entries="@array/quick_actions"
+            android:entryValues="@array/quick_action_values"
+            android:icon="@drawable/ic_send_time_extension_24dp"
+            android:key="quick_action"
+            android:summary="@string/pref_quick_action_summary"
+            android:title="@string/pref_quick_action" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/scroll_to_bottom"
+            android:icon="@drawable/ic_vertical_align_bottom_24dp"
+            android:key="scroll_to_bottom"
+            android:summary="@string/pref_scroll_to_bottom_summary"
+            android:title="@string/pref_scroll_to_bottom" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/start_searching"
+            android:icon="@drawable/ic_search_24dp"
+            android:key="start_searching"
+            android:summary="@string/pref_start_search_summary"
+            android:title="@string/pref_start_search" />
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_replay_24dp"
+            android:defaultValue="@bool/follow_thread_in_channel"
+            android:key="follow_thread_in_channel"
+            android:summary="@string/pref_follow_thread_in_channel_summary"
+            android:title="@string/pref_follow_thread_in_channel" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/jump_to_commands_tab"
+            android:icon="@drawable/ic_open_with_24dp"
+            android:key="jump_to_commands_tab"
+            android:summary="@string/pref_jump_to_commands_tab_summary"
+            android:title="@string/pref_jump_to_commands_tab" />
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_mood_24dp"
+            android:defaultValue="@bool/message_autocomplete"
+            android:key="message_autocomplete"
+            android:summary="@string/pref_message_autocomplete_summary"
+            android:title="@string/pref_message_autocomplete" />
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_format_size_24dp"
+            android:defaultValue="@bool/compose_rich_text"
+            android:key="compose_rich_text"
+            android:summary="@string/compose_using_rich_text_summary"
+            android:title="@string/compose_using_rich_text" />
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_announcement_24dp"
+            android:defaultValue="@bool/show_muc_pm"
+            android:key="show_muc_pm"
+            android:summary="@string/pref_show_muc_pm_summary"
+            android:title="@string/pref_show_muc_pm_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_keyboard_options">
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/display_enter_key"
+            android:icon="@drawable/ic_keyboard_return_24dp"
+            android:key="display_enter_key"
+            android:summary="@string/pref_display_enter_key_summary"
+            android:title="@string/pref_display_enter_key" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/enter_is_send"
+            android:icon="@drawable/ic_send_24dp"
+            android:key="enter_is_send"
+            android:summary="@string/pref_enter_is_send_summary"
+            android:title="@string/pref_enter_is_send" />
+    </PreferenceCategory>
+</PreferenceScreen>

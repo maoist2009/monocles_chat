@@ -1,0 +1,5 @@
+* Avatare zu WebP komprimieren
+* I2P reparieren
+* TODO beenden
+* Verbessern der Schaltfläche zum Scrollen nach unten
+* NPE beheben

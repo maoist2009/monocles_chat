@@ -1,0 +1,54 @@
+* Leeren Platz am unteren Rand im Tablet-Modus entfernen
+* Weitere Zeichenketten hinzufügen 
+* Übersetzungen aktualisieren
+* Option „Foto aufnehmen“ für Medienauswahl korrigiert 
+* Erlaubt das Hinzufügen einer weiteren Eingabeaufforderung nach Benachrichtigungen 
+* Warnleiste anzeigen, wenn ein Konto nicht immer auf MAM eingestellt ist
+* Behebt Fehler bei doppelter ID
+* Manchmal tritt auch hier eine Race Condition auf? Versuche sie nicht zu animieren
+* Gleichzeitige Änderungen abfangen und abbrechen
+* Erlaube das Ignorieren der MAM-Präf-Warnung
+* Entlassene Benachrichtigungen nicht erneut benachrichtigen
+* Blasen von gleichem Absender näher zusammenrücken
+* Verbesserte Einstellung zum Deaktivieren von Avataren in Nachrichtenblasen
+* Raumdetails oben in Chaträumen anheften
+* Teilnehmermenü zu Chaträumen hinzufügen
+* Menü „Notiz an sich selbst“ hinzufügen, wenn nur ein Konto vorhanden ist 
+* Sprachnachrichten auch im Cache speichern, wenn im Cache speichern aktiviert ist
+* Sichtbarkeit der benutzerdefinierten Themeneinstellungen korrigieren
+* Anhänge in Reihenfolge senden
+* Sprachnachricht an Eingabefeld anhängen statt direkt senden
+* Kontext für Reaktionsbenachrichtigungen
+* Antwort nach Bild- und Textantwort löschen
+* Option „Klingeln“ von „Fremden“ trennen
+* Behebung des Erscheinens von Schnellschaltflächen bei der Eingabe von „:“
+* Emoji-Button beim Platzieren von Anhängen ausblenden und Mikrofon und Kamera nicht ausblenden
+* Medienvorschau im Eingabefeld anpassen
+* Konto zum Tab hinzufügen
+* App-Sperre wieder einbauen
+* Versuch, den Absturz aufgrund der Spam-Erkennung zu beheben
+* Automatische Backups werden standardmäßig einmal am Tag durchgeführt
+* Mögliche Behebung eines Absturzes bei der Aufnahme von Bildern im Land-Modus
+* Mögliche Behebung eines Absturzes auf älteren Android Versionen, wo Regex nicht unterstützt wird
+* Behebt, dass ein bearbeitetes Bild nicht geöffnet werden kann
+* Verbesserung der DNS-Server-Einstellungsstrings
+* Neues Popup für Reaktionen
+* Einstellung für Anrufintegration hinzufügen
+* Keine Benachrichtigung bei eigenen Reaktionen
+* Option zum Ausblenden von Medien in der Galerie
+* Vorschaubilder für Datenuri korrigiert
+* Experimentelle WebXDC-Erweiterungsfunktionalität
+* VPN nach Start 
+* Thread-Icon im Eingabefeld immer anzeigen, wenn in Einstellungen aktiviert
+* Fix für amazon.{ca,com} Linkvorschauen
+* Fix für Absturz beim Zurückkommen mit Foto
+* Fix für gleichzeitige Änderung
+* Standard-Medien-Speicher nicht im Cache
+* Hinzufügen des Redmi Note 12S zur Liste der AAC-empfindlichen Geräte
+* Verbesserung der Kontakt- und Raumdetails
+* Fehlende Blasenabstand hinzufügen
+* Redmi Note 12S-Modellcode zu AAC-empfindlichen Geräten hinzufügen
+* Beim Aufbau eines Audio-/Videogesprächs wird kein Verbindungston abgespielt. Lautstärke der Anrufintegrationstöne reduzieren.
+* Hintergrundfarbe des angehefteten Raum-Themas ändern
+* Früheres sauberes Eingabefeld
+* Pfeil zurück Icon ändern

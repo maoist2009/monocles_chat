@@ -1,0 +1,691 @@
+[
+    {
+        "jid": "07f.de",
+        "category": "A",
+        "latestChange": "2025-01-11",
+        "website": {
+            "en": "https://07f.de"
+        },
+        "alternativeJids": [],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {
+            "en": "https://07f.de/xmpp.html"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "24.10.0",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 5368,
+        "maximumHttpFileUploadTotalSize": 10737,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 0,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "en": "https://07f.de/xmpp.html"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {
+            "en": [
+                "xmpp@07f.de"
+            ]
+        },
+        "chatSupport": {
+            "en": [
+                "marzzzello@07f.de"
+            ]
+        },
+        "groupChatSupport": {},
+        "since": "2021-02-24"
+    },
+    {
+        "jid": "chalec.org",
+        "category": "A",
+        "latestChange": "2025-04-10",
+        "website": {
+            "fr": "https://www.chalec.org/services/xmpp/"
+        },
+        "alternativeJids": [],
+        "busFactor": 3,
+        "organization": "non-governmental",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.3.0",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 500,
+        "maximumHttpFileUploadTotalSize": 500,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 30,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "fr": "https://www.chalec.org/mentions-legales.html"
+        },
+        "serverLocations": [
+            "fr"
+        ],
+        "emailSupport": {
+            "en": [
+                "cominfra@a-lec.org"
+            ]
+        },
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "a-lec@salons.a-lec.org"
+            ]
+        },
+        "since": "2022-08-10"
+    },
+    {
+        "jid": "chatrix.one",
+        "category": "A",
+        "latestChange": "2025-04-17",
+        "website": {
+            "bg": "https://chatrix.one/bg/",
+            "en": "https://chatrix.one"
+        },
+        "alternativeJids": [],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {
+            "bg": "https://docs.chatrix.one/account/change-password/",
+            "en": "https://docs.chatrix.one/en/account/change-password/"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.4.0",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 268,
+        "maximumHttpFileUploadTotalSize": 1024,
+        "maximumHttpFileUploadStorageTime": 28,
+        "maximumMessageArchiveManagementStorageTime": 28,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "bg": "https://docs.chatrix.one/terms/",
+            "en": "https://docs.chatrix.one/en/terms/"
+        },
+        "serverLocations": [
+            "ch",
+            "bg"
+        ],
+        "emailSupport": {
+            "en": [
+                "admin@chatrix.one"
+            ]
+        },
+        "chatSupport": {},
+        "groupChatSupport": {},
+        "since": "2018-10-30"
+    },
+    {
+        "jid": "draugr.de",
+        "category": "A",
+        "latestChange": "2025-03-10",
+        "website": {
+            "de": "https://www.draugr.de"
+        },
+        "alternativeJids": [
+            "deshalbfrei.org",
+            "ubuntu-jabber.de",
+            "ubuntu-jabber.net",
+            "verdammung.org",
+            "xabber.de"
+        ],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "24.12.0",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 52,
+        "maximumHttpFileUploadTotalSize": 0,
+        "maximumHttpFileUploadStorageTime": 14,
+        "maximumMessageArchiveManagementStorageTime": 21,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "de": "https://www.draugr.de/nutzungsbedingungen/"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {
+            "en": [
+                "info@draugr.de"
+            ]
+        },
+        "chatSupport": {},
+        "groupChatSupport": {},
+        "since": "2005-11-21"
+    },
+    {
+        "jid": "hookipa.net",
+        "category": "A",
+        "latestChange": "2025-04-06",
+        "website": {
+            "de": "https://hookipa.net",
+            "en": "https://hookipa.net/en/front-page/"
+        },
+        "alternativeJids": [
+            "xmpp.social"
+        ],
+        "busFactor": 2,
+        "organization": "private person",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "24.12-3~bpo12+1",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 0,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 365,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "de": "https://hookipa.net/impressum/"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {
+            "en": [
+                "support@hookipa.net"
+            ]
+        },
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "support@chat.hookipa.net"
+            ]
+        },
+        "since": "2008-05-28"
+    },
+    {
+        "jid": "jabber.fr",
+        "category": "A",
+        "latestChange": "2025-04-02",
+        "website": {
+            "fr": "https://jabberfr.org"
+        },
+        "alternativeJids": [],
+        "busFactor": 2,
+        "organization": "non-governmental",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "Prosody",
+        "serverSoftwareVersion": "hg:c3a02b00cab2",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": false,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 215,
+        "maximumHttpFileUploadStorageTime": 14,
+        "maximumMessageArchiveManagementStorageTime": 14,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "fr": "https://jabberfr.org/legal.php"
+        },
+        "serverLocations": [
+            "fr"
+        ],
+        "emailSupport": {},
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "jabberfr@chat.jabberfr.org"
+            ]
+        },
+        "since": "2004-11-30"
+    },
+    {
+        "jid": "jabjab.de",
+        "category": "A",
+        "latestChange": "2025-02-20",
+        "website": {
+            "de": "https://www.jabjab.de",
+            "en": "https://www.jabjab.de/?lang=en",
+            "fr": "https://www.jabjab.de/?lang=fr",
+            "es": "https://www.jabjab.de/?lang=es",
+            "tr": "https://www.jabjab.de/?lang=tr",
+            "uk": "https://www.jabjab.de/?lang=ua",
+            "ru": "https://www.jabjab.de/?lang=ru"
+        },
+        "alternativeJids": [],
+        "busFactor": -1,
+        "organization": "private person",
+        "passwordReset": {
+            "de": "https://www.jabjab.de/resetpassword",
+            "en": "https://www.jabjab.de/resetpassword?lang=en",
+            "fr": "https://www.jabjab.de/resetpassword?lang=fr",
+            "es": "https://www.jabjab.de/resetpassword?lang=es",
+            "tr": "https://www.jabjab.de/resetpassword?lang=tr",
+            "uk": "https://www.jabjab.de/resetpassword?lang=ua",
+            "ru": "https://www.jabjab.de/resetpassword?lang=ru"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "24.2.0",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 209,
+        "maximumHttpFileUploadTotalSize": 256,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 90,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "de": "https://www.jabjab.de/terms"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {
+            "en": [
+                "admin@jabjab.de"
+            ]
+        },
+        "chatSupport": {
+            "en": [
+                "admin@jabjab.de"
+            ]
+        },
+        "groupChatSupport": {},
+        "since": "2005-08-29"
+    },
+    {
+        "jid": "macaw.me",
+        "category": "A",
+        "latestChange": "2025-04-11",
+        "website": {
+            "en": "https://macaw.me"
+        },
+        "alternativeJids": [],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {
+            "en": "https://macaw.me/services/chat"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.3.0",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 2000,
+        "maximumHttpFileUploadStorageTime": 0,
+        "maximumMessageArchiveManagementStorageTime": 0,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "en": "https://macaw.me/tos"
+        },
+        "serverLocations": [
+            "us"
+        ],
+        "emailSupport": {
+            "en": [
+                "administrator@macaw.me",
+                "blue@macaw.me"
+            ]
+        },
+        "chatSupport": {
+            "en": [
+                "administrator@macaw.me",
+                "blue@macaw.me"
+            ]
+        },
+        "groupChatSupport": {
+            "en": [
+                "support@conference.macaw.me"
+            ]
+        },
+        "since": "2019-03-14"
+    },
+    {
+        "jid": "magicbroccoli.de",
+        "category": "A",
+        "latestChange": "2025-04-24",
+        "website": {
+            "en": "https://magicbroccoli.de"
+        },
+        "alternativeJids": [],
+        "busFactor": -1,
+        "organization": "",
+        "passwordReset": {
+            "en": "https://magicbroccoli.de/register/"
+        },
+        "serverTesting": false,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.04.5-magicbroccoli.de",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 52,
+        "maximumHttpFileUploadTotalSize": 0,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 90,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "de": "https://magicbroccoli.de/datenschutz/"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {},
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "lobby@conference.magicbroccoli.de"
+            ]
+        },
+        "since": "2017-06-20"
+    },
+    {
+        "jid": "projectsegfau.lt",
+        "category": "A",
+        "latestChange": "2025-03-29",
+        "website": {
+            "en": "https://projectsegfau.lt"
+        },
+        "alternativeJids": [],
+        "busFactor": 2,
+        "organization": "private person",
+        "passwordReset": {
+            "en": "https://xmpp.projectsegfau.lt/account"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "24.12.0",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 0,
+        "maximumHttpFileUploadStorageTime": 0,
+        "maximumMessageArchiveManagementStorageTime": 0,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "en": "https://projectsegfau.lt/legal"
+        },
+        "serverLocations": [
+            "in",
+            "ch"
+        ],
+        "emailSupport": {},
+        "chatSupport": {
+            "en": [
+                "sysadmin@projectsegfau.lt"
+            ]
+        },
+        "groupChatSupport": {},
+        "since": "2023-02-07"
+    },
+    {
+        "jid": "redlibre.es",
+        "category": "A",
+        "latestChange": "2025-04-24",
+        "website": {
+            "es": "https://www.redlibre.es"
+        },
+        "alternativeJids": [],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {
+            "es": "https://www.redlibre.es/restablecer-contrasena/"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.4.0",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 500,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 14,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "es": "https://www.redlibre.es/terminos-de-servicio/"
+        },
+        "serverLocations": [
+            "es",
+            "fi"
+        ],
+        "emailSupport": {
+            "en": [
+                "info@redlibre.es"
+            ]
+        },
+        "chatSupport": {
+            "en": [
+                "info@redlibre.es"
+            ]
+        },
+        "groupChatSupport": {
+            "en": [
+                "soporte@salas.redlibre.es"
+            ]
+        },
+        "since": "2023-07-09"
+    },
+    {
+        "jid": "suchat.org",
+        "category": "A",
+        "latestChange": "2025-04-24",
+        "website": {
+            "es": "https://www.suchat.org"
+        },
+        "alternativeJids": [],
+        "busFactor": 1,
+        "organization": "private person",
+        "passwordReset": {
+            "es": "https://www.suchat.org/restablecer-contrasena/"
+        },
+        "serverTesting": true,
+        "serverSoftwareName": "ejabberd",
+        "serverSoftwareVersion": "25.4.0",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": true,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 104,
+        "maximumHttpFileUploadTotalSize": 500,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 30,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "es": "https://www.suchat.org/terminos-de-servicio/"
+        },
+        "serverLocations": [
+            "es",
+            "fi"
+        ],
+        "emailSupport": {
+            "en": [
+                "info@suchat.org"
+            ]
+        },
+        "chatSupport": {
+            "en": [
+                "info@suchat.org"
+            ]
+        },
+        "groupChatSupport": {
+            "en": [
+                "suchat@salas.suchat.org"
+            ]
+        },
+        "since": "2012-06-11"
+    },
+    {
+        "jid": "xmpp.earth",
+        "category": "A",
+        "latestChange": "2024-11-02",
+        "website": {
+            "en": "https://xmpp.earth"
+        },
+        "alternativeJids": [],
+        "busFactor": 2,
+        "organization": "non-governmental",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "",
+        "serverSoftwareVersion": "",
+        "ratingGreenWebCheck": true,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": false,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 52,
+        "maximumHttpFileUploadTotalSize": 10240,
+        "maximumHttpFileUploadStorageTime": 7,
+        "maximumMessageArchiveManagementStorageTime": 365,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "en": "https://xmpp.earth/tos.txt"
+        },
+        "serverLocations": [
+            "de",
+            "se"
+        ],
+        "emailSupport": {},
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "support@muc.xmpp.earth"
+            ]
+        },
+        "since": "2022-08-01"
+    },
+    {
+        "jid": "yax.im",
+        "category": "A",
+        "latestChange": "2025-04-24",
+        "website": {
+            "en": "https://yaxim.org/yax.im/"
+        },
+        "alternativeJids": [],
+        "busFactor": 3,
+        "organization": "non-governmental",
+        "passwordReset": {},
+        "serverTesting": true,
+        "serverSoftwareName": "Prosody",
+        "serverSoftwareVersion": "13.0 nightly build 38 (2025-04-18, 0b01f40df0f9)",
+        "ratingGreenWebCheck": false,
+        "inBandRegistration": true,
+        "inBandRegistrationEmailAddressRequired": false,
+        "inBandRegistrationCaptchaRequired": false,
+        "registrationWebPage": {},
+        "ratingXmppComplianceTester": 100,
+        "ratingImObservatoryClientToServer": "A",
+        "ratingImObservatoryServerToServer": "A",
+        "maximumHttpFileUploadFileSize": 80,
+        "maximumHttpFileUploadTotalSize": 500,
+        "maximumHttpFileUploadStorageTime": 30,
+        "maximumMessageArchiveManagementStorageTime": 14,
+        "professionalHosting": true,
+        "freeOfCharge": true,
+        "legalNotice": {
+            "en": "https://yaxim.org/yax.im/tos/"
+        },
+        "serverLocations": [
+            "de"
+        ],
+        "emailSupport": {},
+        "chatSupport": {},
+        "groupChatSupport": {
+            "en": [
+                "yaxim@chat.yax.im"
+            ]
+        },
+        "since": "2013-11-17"
+    }
+]

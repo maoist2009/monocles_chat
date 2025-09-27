@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideshow_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/gl_SlidePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/main_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/archivoblack"
+            android:textColor="?colorOnSecondaryContainer"
+            android:textSize="18sp"
+            android:text="@string/welcome_to_monocles_chat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/monocles_chat_intro_description" />
+
+        <com.wefika.flowlayout.FlowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                app:svg="@raw/jmp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/android_messages" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_call_24dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_email_48dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/irc" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/matrix" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/xmpp_logo" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/snikket" />
+
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                app:svg="@raw/xmpp" />
+
+        </com.wefika.flowlayout.FlowLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/xmpp_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/archivoblack"
+            android:textColor="?colorOnSecondaryContainer"
+            android:textSize="18sp"
+            android:text="@string/how_the_xmpp_network_works" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/xmpp_network_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/archivoblack"
+            android:textColor="?colorOnSecondaryContainer"
+            android:textSize="18sp"
+            android:text="@string/example_jid" />
+
+        <com.caverock.androidsvg.SVGImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           app:svg="@raw/federation_diagram" />
+    </LinearLayout>
+    </ScrollView>
+
+        <!-- set default preferences screen -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/archivoblack"
+                    android:textColor="?colorOnSecondaryContainer"
+                    android:textSize="18sp"
+                    android:text="@string/set_preferences_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/set_preferences_summary" />
+
+                <!-- Table with preferences -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_load_providers_list_external"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_load_providers_list_external"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/switch_load_providers_list_external"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_allow_screenshots"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_allow_screenshots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/allow_screenshots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/show_link_previews"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_show_weblinks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/show_links"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_show_mappreview_inside"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_show_map_previews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/show_mappreview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_allow_unencrypted_reactions"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_allow_unencrypted_reactions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/allow_unencrypted_reactions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_chat_states"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_chat_states"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/chat_states"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_confirm_messages"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_confirm_messages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/confirm_messages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_broadcast_last_activity"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_last_seen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/last_seen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_blind_trust_before_verification"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_blind_trust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/blind_trust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_enforce_dane"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_dane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/dane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_secure_tls"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_use_secure_tls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/use_secure_tls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/store_media_only_in_cache"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_store_in_cache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/store_in_cache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/card_padding_regular">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:text="@string/pref_send_crash_reports"
+                            android:textAppearance="?textAppearanceBody1" />
+
+                        <ImageButton
+                            android:id="@+id/action_info_send_crash_reports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/image_button_padding"
+                            android:src="@drawable/ic_help_24dp" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/send_crash_reports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:background="?colorSurface">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_above="@+id/linearLayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/main_logo" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="10dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/register_new_account"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/create_new_account" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/use_existing"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/log_in" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/use_backup"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_gravity="center"
+                        android:text="@string/restore_backup" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/use_snikket"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/i_am_snikket_user" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    </androidx.viewpager.widget.ViewPager>
+
+   <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_SlidePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="130dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="?colorPrimaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_SlidePage">
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            app:dotsColor="?colorTertiary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectedDotColor="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/next"
+            android:textColor="?colorOnTertiary"
+            app:backgroundTint="?colorTertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dots_indicator" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/view_privacy_policy"
+            android:textColor="?colorOnTertiary"
+            android:visibility="gone"
+            app:backgroundTint="?colorTertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dots_indicator" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,4 @@
+* Remove autolink from pinned messages
+* Copy files to private storage for now
+* Don't use original filename
+* Fix server invitation

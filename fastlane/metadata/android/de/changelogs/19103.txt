@@ -1,0 +1,32 @@
+* Präferenz für benutzerdefinierten Client-Ressourcennamen hinzufügen
+* Absturz verhindern, wenn die Benutzernamenansicht fehlt
+* Rücknahme von verschlüsselten Nachrichten korrigieren
+* Dünnere Statuszeile und Benutzernamenblase
+* Ungenutzten Klick-Listener entfernen und Sprunglogik für angeheftete Nachrichten aktualisieren
+* Beim Antippen der Antwort mit neuem Bildlauf zur Antwort zur Nachricht springen
+* Dialogfeld zum Auswählen des Bearbeitungssystems oder des XMPP-Kontakts hinzufügen
+* Standardmäßige dynamische Tags für Kontakte korrigieren
+* storeInCache umgestalten, um globale Präferenzen zu priorisieren
+* Einstellung „Absturzberichte senden“ speichern korrigiert
+* Option „Medien im Cache speichern“ zur Begrüßungsaktivität hinzugefügt
+* Serverauswahl beim Einladen zum Server ausblenden
+* Option zum Neustart des Onboardings hinzugefügt
+* Jabber-ID in Zeichenfolgen durch XMPP-Adresse ersetzt
+* „Kontakt löschen“ aus dem Menü entfernt
+* Menüpunkt „Benutzerdefinierte Benachrichtigungen“ zu MUC-Details hinzugefügt
+* Klick zum Scrollen zur beantworteten Nachricht korrigieren
+* Antworten mit OMEMO zulassen
+* Antworten an sich selbst zulassen
+* Fallback für Nachrichtenantworten beheben
+* Alle Reaktionsoptionen direkt öffnen, wenn auf „Weitere Reaktion hinzufügen” getippt wird
+* Bilder und Dateien oben anheften
+* Beschreibungssymbol für angeheftete Dateien anzeigen
+* Videovorschau für angeheftete Nachrichten aktivieren
+* Absturz beheben, wenn CID verfügbar ist, aber keine Datei vorhanden ist
+* Audiodateisymbol für angeheftete Audio-Nachrichten anzeigen
+* Fehlende Übersetzung im Begrüßungsbildschirm korrigieren
+* Veraltetes getActivity() in ConversationFragment ersetzen, um Absturz zu beheben
+* Unterstützung für Geo-URI in angehefteten Nachrichten und Antwortvorschau hinzufügen
+* Option zum Zurückziehen von Standortmeldungen anzeigen
+* Ecken für angeheftete Medien und Antwortmedienvorschau verbessern
+* Übersetzungen aktualisieren

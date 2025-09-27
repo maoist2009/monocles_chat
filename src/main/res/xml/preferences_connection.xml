@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_server_connection">
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/show_connection_options"
+            android:icon="@drawable/ic_settings_24dp"
+            android:key="show_connection_options"
+            android:summary="@string/pref_show_connection_options_summary"
+            android:title="@string/pref_show_connection_options" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/use_tor"
+            android:icon="@drawable/ic_network_node_24dp"
+            android:key="use_tor"
+            android:summary="@string/pref_use_tor_summary"
+            android:title="@string/pref_use_tor" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/use_i2p"
+            android:icon="@drawable/i2p_connection"
+            android:key="use_i2p"
+            android:summary="@string/pref_use_i2p_summary"
+            android:title="@string/pref_use_i2p" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/prefer_ipv6"
+            android:icon="@drawable/rounded_commit_24"
+            android:key="prefer_ipv6"
+            android:summary="@string/pref_prefer_ipv6_summary"
+            android:title="@string/pref_prefer_ipv6" />
+        <EditTextPreference
+            android:defaultValue="@string/default_dns_server_ipv4"
+            android:icon="@drawable/outline_dns_24"
+            android:key="dns_server_ipv4"
+            android:summary="@string/pref_dns_server_ipv4_summary"
+            android:title="@string/pref_dns_server_ipv4_title" />
+        <EditTextPreference
+            android:defaultValue="@string/default_dns_server_ipv6"
+            android:icon="@drawable/outline_dns_24"
+            android:key="dns_server_ipv6"
+            android:summary="@string/pref_dns_server_ipv6_summary"
+            android:title="@string/pref_dns_server_ipv6_title" />
+        <Preference
+            android:key="reset_dns_server"
+            android:icon="@drawable/outline_reset_settings_24"
+            android:summary="@string/pref_reset_dns_server_summary"
+            android:title="@string/pref_reset_dns_server_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="groups_and_conferences"
+        android:title="@string/group_chats_and_channels">
+        <ListPreference
+            android:defaultValue="@string/default_channel_discovery"
+            android:entries="@array/channel_discovery_entries"
+            android:entryValues="@array/channel_discover_values"
+            android:icon="@drawable/ic_travel_explore_24dp"
+            android:key="channel_discovery_method"
+            android:summary="@string/pref_channel_discovery_summary"
+            android:title="@string/pref_channel_discovery" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

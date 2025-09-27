@@ -1,0 +1,15 @@
+* Absturz beheben
+* Verwendung von WEBP-Avataren in Betracht ziehen
+* Code rund um den gebündelten Vertrauensmanager vereinfachen
+* Verschlüsselung von angehefteten Nachrichten und Anheften verschlüsselter Nachrichten erlauben 
+* Nachrichtenblasen aufräumen und im Nicht-Farbmodus deutlicher machen
+* Verwendung der Nachrichten-ID als Sitzungs-ID in der Jingle-Dateiübertragung
+* Abhängigkeiten aktualisieren
+* Korrektur der Nachrichtenansicht unter muc subject
+* Farben korrigieren
+* Fix up merge issues
+* Fix TOR und Verbindungseinstellungen
+* Springen zur gesuchten Nachricht
+* Korrektur des Menüs „Notiz an sich selbst“.
+* Bessere Handhabung von Selbstkontakten
+* Suchsymbol anzeigen, wenn Raum

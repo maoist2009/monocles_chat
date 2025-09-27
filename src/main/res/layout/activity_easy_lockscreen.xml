@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSurface"
+    android:orientation="vertical"
+    tools:context="p32929.easypasscodelock.Activities.LockscreenActivity">
+
+    <ImageView
+        android:id="@+id/monocles_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/monocleslogo_chat_signet"
+        android:visibility="visible"
+        tools:ignore="HardcodedText"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_password_layout"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Lock"
+        android:src="@drawable/outline_lock_24_icon"
+        android:visibility="visible"
+        tools:ignore="HardcodedText"
+        tools:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/input_password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/number_pad_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/span_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/input_password_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:text="@string/enter_your_password_txt"
+            android:textColor="?colorControlNormal"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dotText"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:inputType="textPassword"
+                android:textAlignment="textEnd"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/lbtnDelete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:contentDescription="@string/clear_txt"
+                android:src="@drawable/rounded_backspace_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?colorControlNormal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number_pad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/forgot_pass_textview"
+        android:layout_margin="@dimen/number_pad_parent_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/number_pad_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn1"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn2"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn3"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/number_pad_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn4"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn5"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn6"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/number_pad_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn7"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn8"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn9"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/number_pad_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/lbtn0"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:textColor="?colorControlNormal"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/lbtnEnter"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/ok"
+                android:layout_marginHorizontal="@dimen/number_pad_parent_margin"
+                android:src="@drawable/rounded_keyboard_return_24" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/forgot_pass_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/forgot_password_margin_bottom"
+        android:text="@string/forgot_password_txt"
+        android:textAlignment="center"
+        android:textColor="?colorControlNormal"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

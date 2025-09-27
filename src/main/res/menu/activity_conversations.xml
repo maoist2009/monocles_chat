@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="5"
+        android:title="@string/search_messages"
+        android:visible="@bool/show_combined_search_options"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_search_all_conversations"
+                android:title="@string/search_all_conversations" />
+            <item
+                android:id="@+id/action_search_this_conversation"
+                android:title="@string/search_this_conversation" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_scan_qr_code"
+        android:icon="@drawable/ic_qr_code_scanner_24dp"
+        android:orderInCategory="10"
+        android:title="@string/scan_qr_code"
+        android:visible="@bool/show_qr_code_scan"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_report_spam"
+        android:icon="@drawable/ic_report_24dp"
+        android:orderInCategory="11"
+        android:title="@string/report_spam"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

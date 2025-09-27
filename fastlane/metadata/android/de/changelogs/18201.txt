@@ -1,0 +1,22 @@
+* Behebt den Absturz auf älteren Android-Geräten beim Öffnen von Kontakt-/Multidetails
+* Keine Benachrichtigung bei eigenen Reaktionen
+* MUC PM standardmäßig deaktivieren
+* Öffne Chat-Details auch bei Klick auf den Titel im Tablet-Modus
+* Erlaubt das Kopieren des eigenen OMEMO-Fingerabdrucks mit langem Klick
+* Übersetzungen aktualisieren
+* Option zum Deaktivieren des Wischens zum Archiv hinzufügen
+* Größere Sticker in der Sticker-Auswahl
+* Intro für die Einstellungen hinzufügen + Einstellung für Cache oder gemeinsamen Speicher hinzufügen
+* Wenn Standard auf Cache, nur Schalter deaktivieren
+* Reaktionen-Namensraum in Disco einfügen
+* Monokel-Registrierungsseite hinzufügen
+* Übersetzungen aktualisieren
+* Korrekte bekannte Hosts hinzufügen
+* Automatisches Backup standardmäßig auf keine setzen
+* Option zum Speichern von Medien im Cache systemweit korrigieren
+* Zusammenführen von Upstream-Änderungen
+* Rand für Reaktionen in gesendeten und empfangenen Nachrichten hinzufügen
+* Videoanrufe nicht anzeigen, wenn wir wissen, dass sie nur Audio unterstützen
+* Leere Namen oder Nicknamen sind ungültig und nicht hilfreich 
+* Verpasste Anrufe anzeigen, wenn man offline war 
+* Übersetzungen aktualisieren

@@ -1,0 +1,23 @@
+* Show images in full quality
+* Fix up bottom navigation
+* Add option to import own stickers and GIFs
+* Save custom stickers and GIFs in separate subfolders
+* Asking for omemo keys before sending reactions when necessary
+* Fix status bar color
+* Enable copy link button handling
+* Fix direct search setting
+* Fix toolbar behind status bar
+* hardcode sticker directory to avoid conflicts
+* Support displaying XEP-0118: User Tune
+* Add svg for stickers
+* Fixes WebP preview
+* Update message bubble design
+* Make Copy URL visible for unencrypted files only
+* fix: second reply treated as separate message
+* Prioritize PSTN type when present
+* Introduce StickersMigration: migrate stickers away from documents
+* Hide username in single user chats when opened from notification
+* Avoid editing gif when sending an attachment
+* Fix NPE
+* Refactor message retraction and moderation. retracted messages disappear on both sides now, the same for retracted files
+* Update translations 

@@ -1,0 +1,21 @@
+monocles chat 是现代、安全的 Android XMPP 聊天客户端。基于 Cheogram 和 Conversations 开发，但进行了大量改进并增加了多项功能，以提高可用性和安全性。
+
+连接安全和个人数据保护对我们来说至关重要，因此我们强制加密聊天与服务器之间的连接，确保陌生人几乎不可能拦截和读取您的消息。为此，我们移除了旧版加密套件。这些都适用于 monocles 聊天服务器，但仍与其他使用当今标准的 XMPP 服务器兼容。
+
+如果这还不够，还可以使用 OMEMO 或 OpenPGP 等端到端消息加密技术。这允许在发送设备上对消息进行加密，并仅允许目标接收设备解密。
+
+功能：
+* 使用 <a href="https://zh.wikipedia.org/wiki/不留记录即时通讯">OTR</a>、<a href="https://conversations.im/omemo/">OMEMO</a> 或 <a href="https://www.openpgp.org/about/">OpenPGP</a> 进行端到端加密
+* 发送和接收图片以及其他文件
+* 发送和接收位置信息
+* 发送和接收语音消息
+* 集成联系人的个人资料照片（头像）
+* 与其他客户端同步消息历史记录
+* 支持群组聊天
+* 通讯录集成（无需与服务器交换通讯录）
+* 音频/视频通话
+* 极低的电池消耗
+* 状态消息
+* 每日自动将数据库备份到本地存储
+
+需要帮助？请加入我们的支持群聊 <a href="xmpp:support@conference.monocles.eu">support@conference.monocles.eu</a>。

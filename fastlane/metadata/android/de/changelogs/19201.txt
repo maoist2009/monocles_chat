@@ -1,0 +1,4 @@
+* Autolink aus angehefteten Nachrichten entfernen
+* Dateien vorerst in den privaten Speicher kopieren
+* Originaldateinamen nicht verwenden
+* Server-Einladung reparieren

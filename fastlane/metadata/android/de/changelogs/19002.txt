@@ -1,0 +1,23 @@
+* Bilder in voller Qualität anzeigen
+* Untere Navigation korrigieren
+* Option zum Importieren eigener Sticker und GIFs hinzufügen
+* Benutzerdefinierte Sticker und GIFs in separaten Unterordnern speichern
+* Bei Bedarf vor dem Senden von Reaktionen nach Omemo-Schlüsseln fragen
+* Farbe der Statusleiste korrigieren
+* Kopieren-Link-Button aktivieren
+* Direkte Sucheinstellung korrigieren
+* Symbolleiste hinter der Statusleiste korrigieren
+* Sticker-Verzeichnis fest codieren, um Konflikte zu vermeiden
+* Unterstützung für die Anzeige von XEP-0118: User Tune
+* SVG für Sticker hinzufügen
+* WebP-Vorschau korrigieren
+* Design der Nachrichtenblase aktualisieren
+* „URL kopieren” nur für unverschlüsselte Dateien sichtbar machen
+* Korrektur: Zweite Antwort wird als separate Nachricht behandelt
+* Priorisieren des PSTN-Typs, wenn vorhanden
+* Einführung von StickersMigration: Migration von Stickern aus Dokumenten
+* Ausblenden des Benutzernamens in Einzelbenutzer-Chats, wenn diese über eine Benachrichtigung geöffnet werden
+* Vermeiden der Bearbeitung von GIFs beim Senden eines Anhangs
+* Behebung von NPE
+* Überarbeitung der Nachrichtenrücknahme und -moderation. Zurückgezogene Nachrichten verschwinden nun auf beiden Seiten, ebenso wie zurückgezogene Dateien.
+* Aktualisierung der Übersetzungen

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="show_avatar_incoming_call">true</bool>
+    <bool name="show_thread_feature">false</bool>
+    <bool name="show_maps_inside">true</bool>
+    <bool name="show_own_accounts">false</bool>
+    <bool name="set_text_collapsable">false</bool>
+    <bool name="show_nav_drawer">true</bool>
+    <bool name="internal_meda_viewer">true</bool>
+    <bool name="enable_otr">false</bool>
+    <bool name="use_unicolored_chatbg">false</bool>
+    <bool name="showtextformatting">false</bool>
+    <bool name="app_lock_enabled">false</bool>
+    <bool name="secure_tls">false</bool>
+    <bool name="prefer_ipv6">false</bool>
+    <bool name="use_colored_muc_names">false</bool>
+    <bool name="plain_text_logs">false</bool>
+    <bool name="allow_unencrypted_reactions">true</bool>
+    <bool name="swipe_to_archive">true</bool>
+    <bool name="default_store_media_in_cache">false</bool>
+    <bool name="is_portrait_mode">true</bool>
+    <bool name="disable_reactions_fallback">false</bool>
+    <bool name="plain_text_links">false</bool>
+    <bool name="load_providers_list_external">true</bool>
+    <bool name="use_i2p">false</bool>
+    <bool name="load_image_from_any_link">false</bool>
+    <bool name="pinned_status_message">true</bool>
+</resources>

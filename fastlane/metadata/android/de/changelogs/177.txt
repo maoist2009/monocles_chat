@@ -1,0 +1,33 @@
+* Große Umgestaltung auf Material 3
+* Optional drei Avatarformen
+* Optionale Threads-Funktion
+* Optionale untere Navigation
+* Optionale Navigationsschublade
+* Integrierter Fotoeditor
+* Zoom in der Bildvorschau zulassen
+* Zoom in der Avatar-Vorschau zulassen
+* Kompatibel mit anderen Gateways
+* Kompatibel mit Telefonanruf / SMS-Brücke
+* Leistungsverbesserung
+* Reduzierung des Batterieverbrauchs
+* Benutzerdefinierter Hintergrund pro Chat
+* Senden von Nachrichten mit Timer
+* Emoji- und Stickersuche mit „:“
+* Benutzersuche mit „@“ in Chaträumen
+* Viele Fehlerbehebungen
+* Abhängigkeiten aktualisieren
+* OTR implementieren
+* Erstmalig „echte“ Reaktionen implementieren
+* Benachrichtigung, wenn Reaktion erhalten
+* Sticker als Reaktion zulassen
+* Langes Drücken, um zu sehen, wer reagiert hat
+* Einmaliges Tippen auf das Nachrichtenfeld öffnet das Reaktions-Popup
+* Behebt Absturz beim Öffnen der Nachricht aus der Benachrichtigung
+* Verschlüsselung der Reaktionen, wenn OMEMO verwendet wird
+* Korrekturen beim Entfernen/Hinzufügen von Antworten besser unterstützen 
+* Behebt den durch WeakRef verursachten Absturz 
+* OTR blindes Vertrauen
+* Emoji-Picker neu Integration
+* Sticker-Auswahl wieder einführen
+* GIFs-Picker aus Animojis
+* Und mehr

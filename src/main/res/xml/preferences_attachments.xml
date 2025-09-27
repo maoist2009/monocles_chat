@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_category_sending">
+        <ListPreference
+            android:defaultValue="@string/picture_compression"
+            android:entries="@array/picture_compression_entries"
+            android:entryValues="@array/picture_compression_values"
+            android:icon="@drawable/ic_photo_24dp"
+            android:key="picture_compression"
+            android:title="@string/pref_picture_compression"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="@string/video_compression"
+            android:entries="@array/video_compression_entries"
+            android:entryValues="@array/video_compression_values"
+            android:icon="@drawable/ic_movie_24dp"
+            android:key="video_compression"
+            android:title="@string/pref_video_compression"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_receiving">
+        <ListPreference
+            android:defaultValue="@integer/auto_accept_filesize"
+            android:icon="@drawable/ic_download_24dp"
+            android:key="auto_accept_file_size"
+            android:title="@string/pref_automatic_download"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/auto_accept_unmetered"
+            android:icon="@drawable/ic_wifi_24dp"
+            android:key="auto_accept_unmetered"
+            android:title="@string/always_accept_when_unmetered"
+            android:summary="@string/pref_auto_accept_unmetered_summary" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/default_nomedia"
+            android:icon="@drawable/browse_24dp"
+            android:key="nomedia"
+            android:title="@string/pref_hide_media_title"
+            android:summary="@string/pref_hide_media_summary" />
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/default_store_media_in_cache"
+            android:icon="@drawable/ic_archive_24dp"
+            android:key="default_store_media_in_cache"
+            android:summary="@string/pref_store_media_in_cache"
+            android:title="@string/store_media_only_in_cache" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_advanced_options">
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/internal_meda_viewer"
+            android:icon="@drawable/outline_perm_media_24"
+            android:key="internal_meda_viewer"
+            android:title="@string/internal_meda_viewer_title"
+            android:summary="@string/internal_meda_viewer_summary" />
+        <!--
+        <Preference
+            android:title="@string/change_stickers_location"
+            android:key="sticker_directory" />
+        -->
+        <Preference
+            android:title="@string/update_default_stickers"
+            android:key="download_default_stickers" />
+        <Preference
+            android:title="@string/import_own_stickers"
+            android:summary="@string/import_own_stickers_summary"
+            android:key="import_own_stickers" />
+        <Preference
+            android:title="@string/import_own_gifs"
+            android:summary="@string/import_own_gifs_summary"
+            android:key="import_own_gifs" />
+        <Preference
+            android:title="@string/clear_blocked_media"
+            android:key="clear_blocked_media" />
+        <ListPreference
+            android:title="@string/voice_message_codec"
+            android:defaultValue="opus"
+            android:entries="@array/voice_codec_entries"
+            android:entryValues="@array/voice_codec_values"
+            android:key="voice_message_codec"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

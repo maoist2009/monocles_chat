@@ -1,0 +1,34 @@
+* Autofill- Message auf false setzen
+* Aktivierte TLS-Chiffren aktualisieren 
+* Option hinzufügen, um sichere TLS-Chiffren zu erzwingen
+* Option hinzufügen, um IPv6 zu bevorzugen
+* Metadaten von Audiodateien anzeigen, wenn verfügbar
+* Jahr in about korrigieren
+* Aktiv-Indikator zur Kontaktliste hinzufügen
+* Benutzeranzahl in der Channel Discovery anzeigen
+* Option für farbige Benutzernamen in Gruppenchats
+* Automatisches Aktivieren von „Eigenes Konto anzeigen“ beim Hinzufügen weiterer Konten
+* Rand für Reaktionen in gesendeten und empfangenen Nachrichten hinzufügen
+* Sprachaufzeichnung korrigieren und verbessern, standardmäßig auf Opus
+* Standardmäßig automatische Backups einmal am Tag
+* Standardmäßig werden Dateien im Cache gespeichert
+* Beta-Option zum Zusammenklappen von Textnachrichten, die länger als 8 Zeilen sind 
+* Option hinzufügen, um Avatar-Zugriffsmodell auf Kontakte zu beschränken
+* Behebt das Erscheinen von Emoji-Popups, wenn auf einen Link geklickt wird.
+* Korrektur der Zeichenkette von muc-Teilnehmern
+* Dateien und Sicherungsordner in Dokumente/monocles chat/ ändern
+* Grundlegende Unterstützung für das Hinzufügen nach Jid im Gruppenchat erstellen
+* Anpassung der Anrufintegrationstöne
+* Liste der verwendeten Clients in den Kontaktdetails anzeigen
+* Option zum Exportieren von Nachrichten im Klartext hinzufügen
+* Datenbank-Backend neu aufbauen
+* Weitere Korrekturen
+* Entfernen aller Animationen behebt jetzt die Verzögerung der Eingabefelder
+* Repariert den Import von Einstellungen und erlaubt den Import von settings.dat von überall
+* Übersetzungen aktualisieren
+* Schriftgröße in Nachrichtenblasen, Reaktionen und Eingabefeldern auf Benutzereinstellung erhöhen
+* Übersetzungen aktualisieren 
+* Reaktionen auf MUC PM reparieren oder deaktivieren
+* Ausgewählte Antwort löschen, wenn eine Korrektur gestartet wird
+* Nein, du darfst nicht an dich selbst antworten 
+* Korrekten Dateinamen beim Teilen von Medien verwenden

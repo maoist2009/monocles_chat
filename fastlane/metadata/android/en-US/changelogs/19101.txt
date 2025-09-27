@@ -1,0 +1,32 @@
+* Add preference for custom client resource name
+* Prevent crash if username view is missing
+* Fix message retraction for encrypted messages
+* Thinner status line and username bubble
+* Remove unused click listener and update pinned message jump logic to jump to original message
+* Jump to message on tap on reply with new scroll to reply
+* Add dialog to select editing system or XMPP contact
+* Fix default dynamic tags for contacts
+* Refactor storeInCache to prioritize global preference
+* Fix store 'send crash reports' preference
+* Add 'store media in cache' option to welcome activity
+* Hide server selection when inviting to server
+* Add option to restart onboarding
+* Replace Jabber ID with XMPP address in strings
+* Remove "delete contact" from menu
+* Add Custom Notifications menu item to MUC Details
+* Fix reply click to scroll to replied message
+* Allow sending replies with OMEMO
+* Allow reply to yourself
+* Fix message replies fallback
+* Directly open all reactions choice when tapping on add additional reaction
+* Allow pinning images and files to the top
+* Show description icon for pinned files
+* Enable video previews for pinned messages
+* Fix crash when cid is available but no file
+* Show audio file icon for pinned audio messages
+* Fix missing translation in welcome screen
+* Replace deprecated getActivity() in ConversationFragment to fix crash
+* Add support for geo URI in pinned messages and reply preview
+* Show option to retract location messages
+* Improve corners for pinned media and reply media preview
+* Update translations

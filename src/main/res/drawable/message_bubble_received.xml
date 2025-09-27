@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:radius="0dp"
+                android:bottomLeftRadius="@dimen/bubble_radius"
+                android:bottomRightRadius="@dimen/bubble_radius"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="@dimen/bubble_radius" />
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
+            <size android:width="10dp" android:height="10dp" />
+            <solid android:color="?colorSurfaceContainerHigh" />
+        </shape>
+    </item>
+</layer-list>

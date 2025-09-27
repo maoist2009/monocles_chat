@@ -1,0 +1,5 @@
+* Compress avatars to WebP
+* Fix I2P
+* Finish TODO
+* Improve scroll to bottom button
+* Fix NPE

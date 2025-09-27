@@ -1,0 +1,22 @@
+* Add missing strings
+* Correct swipe to reply
+* Fix note to self menu in chat overview
+* Change link and presence icons + colorize group subject and status message icons with presence
+* Fix potential NPE
+* Fix keyboard/emojipicker when switching between chat, commands and WebXDC page
+* Add setting to permanently disable pinned and updated status messages
+* Improve status message icon
+* Improve app lock screen
+* Fix potential crash
+* Add onPrepareOptionsMenu
+* Fix conversations list in tablet mode
+* Improve accounts overview
+* Fix soft input mode when opening chat from notification
+* Update translations
+* Change some defaults
+* Add further preference to intro screen
+* Add Samsung Galaxy S9+ and Google Pixel 2 to the list of AAC sensitive devices
+* Directly set focus on input field when opening chat
+* Clean up monocles registration info
+* View Sticker/GIF on long press instead of deleting it
+* Clean up avatar preview

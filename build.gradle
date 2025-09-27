@@ -1,0 +1,327 @@
+// Top-level build file where you can add configuration options common to all
+// sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.12.0'
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:7.0.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0"
+    }
+}
+
+plugins {
+    id 'org.ajoberstar.grgit' version '4.1.1'
+    // PLUGIN INSERT
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url='https://jitpack.io'}
+}
+
+def tags = grgit.tag.list().findAll { it.dateTime != null }.sort { it.dateTime }
+
+// ROOT INSERT
+
+configurations {
+    playstoreImplementation
+    freeImplementation
+    conversationsFreeImplementation
+    monocleschatPlaystoreImplementation
+    conversationsPlaystoreImplementation
+    quicksyPlaystoreImplementation
+    quicksyPlaystoreImplementation
+    quicksyFreeImplementation
+    quicksyImplementation
+}
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'junit:junit:4.13.2'
+    androidTestImplementation 'junit:junit:4.13.2'
+
+    implementation "androidx.core:core:1.13.1"
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.4'
+
+    implementation project(':libs:annotation')
+    annotationProcessor project(':libs:annotation-processor')
+
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+
+    monocleschatPlaystoreImplementation("com.android.installreferrer:installreferrer:2.2")
+    monocleschatPlaystoreImplementation 'com.github.singpolyma:play-licensing:1c637ea03c'
+    conversationsPlaystoreImplementation("com.android.installreferrer:installreferrer:2.2")
+    quicksyPlaystoreImplementation 'com.google.android.gms:play-services-auth-api-phone:18.2.0'
+    implementation 'com.github.open-keychain.open-keychain:openpgp-api:v5.7.1'
+    implementation("com.github.CanHub:Android-Image-Cropper:2.2.0")
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.exifinterface:exifinterface:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.preference:preference:1.2.1"
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.android.material:material:1.13.0-beta01'
+    implementation 'androidx.work:work-runtime:2.10.0'
+
+    implementation "androidx.emoji2:emoji2:1.5.0"
+    freeImplementation "androidx.emoji2:emoji2-bundled:1.5.0"
+    implementation "androidx.emoji2:emoji2-emojipicker:1.5.0"
+
+    implementation 'org.bouncycastle:bcmail-jdk18on:1.81'
+    implementation 'com.google.zxing:core:3.5.3'
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+    implementation 'org.whispersystems:signal-protocol-java:2.6.2'
+    implementation "com.wefika:flowlayout:0.4.1"
+
+    //noinspection GradleDependency
+    implementation 'io.deepmedia.community:transcoder-android:0.11.1'
+
+    implementation 'org.jxmpp:jxmpp-jid:1.0.3'
+    implementation 'org.jxmpp:jxmpp-stringprep-libidn:1.0.3'
+    implementation 'org.osmdroid:osmdroid-android:6.1.16'
+    implementation 'org.hsluv:hsluv:0.2'
+    implementation 'org.conscrypt:conscrypt-android:2.5.3'
+    implementation 'me.drakeet.support:toastcompat:1.1.0'
+    implementation "com.leinardi.android:speed-dial:3.3.0"
+
+    implementation "com.squareup.retrofit2:retrofit:2.11.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.11.0"
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
+
+    implementation 'com.google.guava:guava:33.4.6-android'
+    implementation 'io.michaelrocks:libphonenumber-android:8.13.52'
+    implementation 'im.conversations.webrtc:webrtc-android:129.0.0'
+    implementation 'io.github.nishkarsh:android-permissions:2.1.6'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'com.github.martin-stone:hsv-alpha-color-picker-android:3.1.0'
+    implementation 'com.github.ipld:java-cid:v1.3.1'
+    //implementation 'com.splitwise:tokenautocomplete:3.0.2'
+    implementation 'com.github.singpolyma:TokenAutoComplete:bfa93780e0'
+    implementation 'com.github.singpolyma:Better-Link-Movement-Method:393d35e453'
+    implementation 'com.github.singpolyma:android-identicons:3361281bd4'
+    implementation 'com.github.woltapp:blurhash:master'
+    implementation 'com.caverock:androidsvg-aar:1.4'
+    implementation 'org.tomlj:tomlj:1.1.0'
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation 'com.github.singpolyma:OpenGraphParser:d0882eadb2'
+    implementation 'me.xdrop:fuzzywuzzy:1.4.0'
+    implementation 'net.fellbaum:jemoji:1.4.1'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'com.github.bumptech.glide:glide:4.15.1' // For photo editor compatibility
+
+    implementation 'com.github.natario1:Autocomplete:v1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.inusedname:AndroidPhotoFilters:1.0.7.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.mikepenz:materialdrawer:10.0.0-b01'
+    implementation 'org.jitsi:org.otr4j:0.23'
+    implementation "com.github.pgreze:android-reactions:1.6"
+    // Add Media3
+    implementation "androidx.media3:media3-exoplayer:1.3.1"
+    implementation "androidx.media3:media3-ui:1.3.1"
+    implementation "androidx.media3:media3-session:1.3.1"
+}
+
+ext {
+    preDexEnabled = System.getProperty("pre-dex", "true")
+    abiCodes = ['armeabi-v7a': 1, 'x86': 2, 'x86_64': 3, 'arm64-v8a': 4]
+}
+
+android {
+    namespace 'eu.siacs.conversations'
+    compileSdk 35
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 35
+        versionCode 193
+        versionName "2.0.16"
+        applicationId "de.monocles.chat"
+        def appName = "monocles chat"
+        resValue "string", "app_name", appName
+        buildConfigField "String", "APP_NAME", "\"$appName\""
+        buildConfigField "String", "PRIVACY_POLICY", "\"https://monocles.eu/legal-privacy/#policies-section\""
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    splits {
+        abi {
+            universalApk true
+            enable true
+            reset()
+            //noinspection ChromeOsAbiSupport
+            include project.ext.abiCodes.keySet() as String[]
+        }
+    }
+
+    configurations {
+        implementation.exclude group: 'org.jetbrains' , module:'annotations'
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    flavorDimensions += "mode"
+    flavorDimensions += "distribution"
+
+    productFlavors {
+
+        quicksy {
+            dimension "mode"
+            applicationId = "im.quicksy.client"
+            def appName = "Quicksy"
+            resValue "string", "app_name", appName
+            buildConfigField "String", "APP_NAME", "\"$appName\""
+            buildConfigField "String", "PRIVACY_POLICY", "\"https://quicksy.im/privacy.htm\""
+        }
+
+        conversations {
+            dimension "mode"
+            buildConfigField "String", "PRIVACY_POLICY", "\"https://conversations.im/privacy.html\""
+        }
+
+        monocleschat {
+            dimension "mode"
+            applicationId = "de.monocles.chat"
+            versionCode 193
+            versionName "2.0.16"
+            def appName = "monocles chat"
+            resValue "string", "app_name", appName
+            buildConfigField "String", "APP_NAME", "\"$appName\""
+            buildConfigField "String", "PRIVACY_POLICY", "\"https://monocles.eu/legal-privacy/#policies-section\""
+        }
+
+        playstore {
+            dimension "distribution"
+            versionNameSuffix "+playstore"
+            applicationIdSuffix "playstore"
+        }
+        free {
+            dimension "distribution"
+            versionNameSuffix "+free"
+        }
+    }
+
+    applicationVariants.all { variant ->
+      variant.resValue "string", "applicationId", applicationId
+    }
+
+    sourceSets {
+        quicksyFree {
+            java {
+                srcDir 'src/quicksyFree/java'
+            }
+        }
+        quicksyPlaystore {
+            java {
+                srcDir 'src/quicksyPlaystore/java'
+            }
+            res {
+                srcDir 'src/quicksyPlaystore/res'
+            }
+        }
+        conversationsFree {
+            java {
+                srcDir 'src/conversationsFree/java'
+            }
+        }
+        monocleschatFree {
+            java {
+                srcDir 'src/conversationsFree/java'
+            }
+        }
+        conversationsPlaystore {
+            java {
+                srcDir 'src/conversationsPlaystore/java'
+            }
+            res {
+                srcDir 'src/conversationsPlaystore/res'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk.debugSymbolLevel = 'full'
+        }
+    }
+
+
+    if (new File("signing.properties").exists()) {
+        Properties props = new Properties()
+        props.load(new FileInputStream(file("signing.properties")))
+
+        signingConfigs {
+            release {
+                storeFile file(props['keystore'])
+                storePassword props['keystore.password']
+                keyAlias props['keystore.alias']
+                keyPassword props['keystore.password']
+            }
+        }
+        buildTypes.release.signingConfig = signingConfigs.release
+    }
+
+    lintOptions {
+        disable 'MissingTranslation', 'InvalidPackage','AppCompatResource'
+        abortOnError false
+    }
+
+    subprojects {
+
+        afterEvaluate {
+            if (getPlugins().hasPlugin('android') ||
+                    getPlugins().hasPlugin('android-library')) {
+
+                configure(android.lintOptions) {
+                    disable 'AndroidGradlePluginVersion', 'MissingTranslation'
+                    abortOnError false
+                }
+            }
+
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/BCKEY.DSA', 'META-INF/BCKEY.SF', 'META-INF/versions/9/OSGI-INF/MANIFEST.MF', 'META-INF/LICENSE.md', 'META-INF/LICENSE-notice.md']
+        }
+    }
+    lint {
+        disable 'MissingTranslation', 'InvalidPackage', 'AppCompatResource'
+    }
+    buildFeatures {
+        buildConfig true
+    }
+
+    android.applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def baseAbiVersionCode = project.ext.abiCodes.get(output.getFilter(com.android.build.OutputFile.ABI))
+            if (baseAbiVersionCode != null) {
+                output.versionCodeOverride = (100 * project.android.defaultConfig.versionCode) + baseAbiVersionCode
+            } else {
+                //output.versionCodeOverride = (100 * project.android.defaultConfig.versionCode) + grgit.log(includes: ["HEAD"], excludes: [tags.last()]).size()
+            }
+        }
+
+    }
+}

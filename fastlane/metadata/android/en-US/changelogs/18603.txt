@@ -1,0 +1,15 @@
+* Fix crash
+* Consider using WEBP Avatars
+* simplify code around bundled trust manager
+* Encrypt pinned message and allow pin encrypted messages 
+* Clean up message bubbles and make message bubbles more distinct in non color mode
+* use message id as session id in jingle file transfer
+* Update dependency
+* Fix messages view below muc subject
+* Correct colors
+* Fix up merge issues
+* Fix TOR and connection settings
+* Initial jump to searched message
+* Fix note to self menu
+* Better handling of self contact
+* Show search icon if room 

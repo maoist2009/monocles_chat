@@ -1,0 +1,73 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "de.monocles.chat",
+  "variantName": "monocleschatFreeDebug",
+  "elements": [
+    {
+      "type": "UNIVERSAL",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 4209171,
+      "versionName": "29082ff+free",
+      "outputFile": "Conversations-monocleschat-free-universal-debug.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 4205304,
+      "versionName": "29082ff+free",
+      "outputFile": "Conversations-monocleschat-free-arm64-v8a-debug.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 4205302,
+      "versionName": "29082ff+free",
+      "outputFile": "Conversations-monocleschat-free-x86-debug.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 4205301,
+      "versionName": "29082ff+free",
+      "outputFile": "Conversations-monocleschat-free-armeabi-v7a-debug.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 4205303,
+      "versionName": "29082ff+free",
+      "outputFile": "Conversations-monocleschat-free-x86_64-debug.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 23
+}

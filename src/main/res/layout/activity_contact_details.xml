@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/details_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/card_padding_regular">
+
+                        <LinearLayout
+                            android:id="@+id/details_jidbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <eu.siacs.conversations.ui.widget.AvatarView
+                                android:id="@+id/details_contact_badge"
+                                android:layout_width="@dimen/avatar_on_details_screen_size"
+                                android:layout_height="@dimen/avatar_on_details_screen_size"
+                                android:scaleType="centerCrop"
+                                android:layout_marginBottom="24dp"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/details_contact_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textIsSelectable="true"
+                                android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="1dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textAppearance="?textAppearanceTitleLarge" />
+
+                            <TextView
+                                android:id="@+id/details_contactjid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/account_settings_example_jabber_id"
+                                android:textIsSelectable="true"
+                                android:layout_gravity="center"
+                                android:textAppearance="?textAppearanceTitleMedium" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/tags"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8sp">
+
+                                <androidx.constraintlayout.helper.widget.Flow
+                                    android:id="@+id/flow_widget"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:flow_horizontalBias="0"
+                                    app:flow_horizontalGap="8sp"
+                                    app:flow_horizontalStyle="packed"
+                                    app:flow_verticalGap="4sp"
+                                    app:flow_wrapMode="chain"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <de.monocles.chat.TagEditorView
+                                android:id="@+id/edit_tags"
+                                android:visibility="gone"
+                                android:hint="Tags"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginTop="-4dp" />
+
+                            <TextView
+                                android:id="@+id/details_lastseen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="?textAppearanceTitleSmall"
+                                tools:text="@string/just_now" />
+
+                            <TextView
+                                android:id="@+id/status_message"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:textAppearance="?textAppearanceBodyMedium"
+                                tools:text="Hey there! I’m using monocles chat" />
+
+                            <TextView
+                                android:id="@+id/clients"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:textAppearance="?textAppearanceBodyMedium" />
+
+                            <Button
+                                android:id="@+id/archive_contact_button"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="14dp"
+                                android:textColor="@color/black87" />
+
+                            <Button
+                                android:id="@+id/add_contact_button"
+                                style="@style/Widget.Material3.Button.ElevatedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/black87"
+                                android:text="@string/add_contact" />
+
+                            <com.google.android.material.materialswitch.MaterialSwitch
+                                android:id="@+id/details_send_presence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/send_presence_updates" />
+
+                            <com.google.android.material.materialswitch.MaterialSwitch
+                                android:id="@+id/details_receive_presence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/receive_presence_updates" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/details_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/details_jidbox"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/using_account"
+                            android:textAppearance="?textAppearanceLabelMedium" />
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.05dp"
+                        android:background="@drawable/details_line" />
+
+                    <ListView
+                        android:id="@+id/profile_items"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0dp"></ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recent_threads_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.05dp"
+                        android:background="@drawable/details_line" />
+
+                    <ListView
+                        android:id="@+id/recent_threads"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0dp"></ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.05dp"
+                        android:background="@drawable/details_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/card_padding_regular">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="@string/store_media_only_in_cache"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:singleLine="true"
+                                android:textAppearance="?textAppearanceBodyMedium" />
+
+                            <com.google.android.material.materialswitch.MaterialSwitch
+                                android:id="@+id/store_in_cache"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:focusable="false" />
+
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/media"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="-2dp"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/show_media"
+                                style="?attr/materialButtonOutlinedStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/view_media" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/keys_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.05dp"
+                        android:background="@drawable/details_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/details_contact_keys"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/card_padding_list" />
+
+                        <LinearLayout
+                            android:id="@+id/unverified_warning"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/card_padding_list">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/list_padding"
+                                android:text="@string/contact_uses_unverified_keys"
+                                android:textAppearance="?textAppearanceBodyMedium"
+                                android:textColor="?colorOnSurfaceVariant" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/card_padding_list">
+
+
+                            <Button
+                                android:id="@+id/scan_button"
+                                style="@style/Widget.Material3.Button.TextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/scan_qr_code" />
+
+                            <Button
+                                android:id="@+id/show_inactive_devices"
+                                style="@style/Widget.Material3.Button.TextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_inactive_devices" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

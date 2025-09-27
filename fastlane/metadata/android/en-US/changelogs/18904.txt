@@ -1,0 +1,3 @@
+* Skip photo editor when a video was received
+* Go back to jpeg avatars
+* Update translations

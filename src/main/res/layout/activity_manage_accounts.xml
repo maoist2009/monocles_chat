@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ListView
+            android:id="@+id/account_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/phone_accounts"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/phone_accounts_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/yeller"
+            android:src="@drawable/ic_call_24dp"
+            android:tint="@color/white"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Photo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/phone_accounts_image"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/avatar_item_distance">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:singleLine="true"
+                android:text="Manage Phone Accounts"
+                android:textAppearance="?textAppearanceBodyLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android system dialler integration"
+                android:textAppearance="?textAppearanceBodyMedium" />
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/phone_accounts_settings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            app:strokeColor="@null"
+            android:src="@drawable/ic_settings_24dp"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Photo" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="?colorSurfaceContainerLowest"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu_accounts" />
+</RelativeLayout>
+</layout>

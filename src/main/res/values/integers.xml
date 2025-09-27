@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="update_track_longer_than_secs">120</integer>
+</resources>

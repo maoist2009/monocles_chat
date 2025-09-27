@@ -1,0 +1,27 @@
+* Hide record voice and take picture buttons when request for voice needed
+* Reimplement I2P support
+* Add ASUS Nexus 7 to the list of problematic AEC devices
+* Margin to message bubbles a bit
+* Fix link handling
+* Revert "Show metadata of audio files when available" (Fixes lagging when many Audio messages are shown)
+* Call it space now
+* Update exoplayer2 to media3-exoplayer
+* MessageAdapter code cleanup
+* Follow upstream changes + code cleanup
+* Fix up bluetooth permission
+* Remove old emoji search
+* Send stickers as images for compatibility
+* Add setting for auto-download images from any link
+* Show presence status message on top, show it again when status changed 
+* Refactor fragment fixes layout lagging
+* Added animations
+* add force P2P menu item to failed HTTP uploads
+* refactor backup restore to use worker instead of service
+* add ability to pick custom backup location 
+* Fix crashes
+* Try to load stickers and gifs view in background tasks 
+* Add missing preferences icon
+* Fix up accept unkown omemo key icon
+* Prepare Database for migration from legacy version
+* Try to fix rare crash when initially loading stickers and GIFs
+* Default to not checked delete chat after deleted all message

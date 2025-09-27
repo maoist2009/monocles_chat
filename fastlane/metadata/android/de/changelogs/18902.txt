@@ -1,0 +1,3 @@
+* Foto-Editor überspringen, wenn ein Video ausgewählt wurde
+* Zurück zu jpeg-Avataren
+* Übersetzungen aktualisieren

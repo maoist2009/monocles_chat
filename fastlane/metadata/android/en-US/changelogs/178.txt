@@ -1,0 +1,3 @@
+* Update translations
+* Reapply default background
+* Improve input field height

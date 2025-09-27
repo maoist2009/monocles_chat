@@ -1,0 +1,22 @@
+* Fehlende Zeichenketten hinzufügen
+* Wischen zum Antworten korrigieren
+* Menü „Notiz an sich selbst“ in der Chat-Übersicht korrigieren
+* Link- und Anwesenheitssymbole ändern + Gruppenbetreff und Statusnachrichten-Symbole mit Anwesenheit einfärben
+* Behebt mögliche NPE
+* Behebt Tastatur/Emojipicker beim Wechsel zwischen Chat, Befehlen und WebXDC-Seite
+* Einstellung hinzufügen, um angeheftete und aktualisierte Statusmeldungen dauerhaft zu deaktivieren
+* Verbessert das Symbol für Statusmeldungen
+* Verbessert den Sperrbildschirm der App
+* Behebung eines möglichen Absturzes
+* onPrepareOptionsMenu hinzufügen
+* Liste der Unterhaltungen im Tablet-Modus korrigiert
+* Verbessert die Kontenübersicht
+* Behebung des Soft-Input-Modus beim Öffnen des Chats über die Benachrichtigung
+* Übersetzungen aktualisieren
+* Einige Standardeinstellungen ändern
+* Hinzufügen weiterer Einstellungen zum Intro-Bildschirm
+* Hinzufügen von Samsung Galaxy S9+ und Google Pixel 2 zu der Liste der AAC-empfindlichen Geräte
+* Direktes Setzen des Fokus auf das Eingabefeld beim Öffnen des Chats
+* Monocles-Registrierungsinformationen bereinigen
+* Sticker/GIF bei langem Drücken anzeigen, anstatt sie zu löschen
+* Avatar-Vorschau bereinigen

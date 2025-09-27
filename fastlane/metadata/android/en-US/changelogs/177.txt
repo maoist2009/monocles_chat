@@ -1,0 +1,33 @@
+* Big redesign on Material 3
+* Optional three avatar shapes
+* Optional threads feature
+* Optional bottom navigation
+* Optional navigation drawer
+* Integrated photo editor
+* Allow zoom in image preview
+* Allow zoom in avatar preview
+* Compatible with other gateways
+* Compatible with phone call / SMS bridge
+* Performance improvement
+* Reduce battery consumption
+* Custom Background per chat
+* Send message with timer
+* Emoji and sticker search with ":"
+* User search with "@" in chat rooms
+* Many fixes
+* Update dependecies
+* Implement OTR
+* Initially implement "real" reactions
+* Notify when reaction received
+* Allow stickers as reaction
+* Long press to see who reacted
+* Single tap on message box to open reactions popup
+* Fix crash opening message from notification
+* Encrypt reactions fallback when OMEMO is in use
+* Support corrections removing/adding reply better 
+* Fix crash caused by WeakRef 
+* OTR blind trust
+* Reapply emoji picker
+* Reapply stickers picker
+* GIFs picker from animojis
+* And more

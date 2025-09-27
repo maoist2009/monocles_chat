@@ -1,0 +1,22 @@
+* Fix crash on older Android when opening contact/muc details
+* Do not notify for own reactions
+* Disable MUC PM by default
+* Open chat details when click on title in tablet mode too
+* Allow copying own OMEMO fingerprint with long click
+* Update translations
+* Add option to disable swipe to archive
+* Bigger stickers in stickers picker
+* Add preferences intro + Add setting to default to cache or shared storage
+* If default to cache only disable switch
+* include reactions namespace in disco
+* Add monocles registration site
+* Update translations
+* Add correct known hosts
+* Set default automatic backup to none
+* Fix up option to store media in cache system wide
+* Merge upstream changes
+* Add margin to reactions in sent and received messages
+* Don't show video call if we know they only support audio
+* Empty name or nick is invalid and unhelpful 
+* Show missed calls from when you were offline 
+* Update translations

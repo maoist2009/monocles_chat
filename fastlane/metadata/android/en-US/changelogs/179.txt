@@ -1,0 +1,35 @@
+* Disable call integration for Android 15
+* Handle reactions with missing id attribute
+* Look up older messages in DB for reactions
+* Fix asking for contact permission
+* Photo picker on some androids uses this path
+* Only indicate active when account is online and connected
+* Upgrade minidns
+* Reintegrate optional text formatting toolbar
+* Initial message requests feature
+* Option to report all chat requests as SPAM
+* Include message id with spam report
+* Fix infinite loop when user denies notifications
+* Disable hardcoded dns on both sides
+* Try DNSSEC 3 times
+* Always try dialler integration if enabled
+* Reset outputFileWrittenLatch for every new voice record
+* If user is running on SailfishOS, disable Call Integration. 
+* Complete MiniDNS integration and change hardcoded DNS server
+* Testing option to change DNS server or disable mini DNS completely when empty
+* Add crypto to profile
+* Do not offer 'add reaction' when not participating
+* Change default DNS server
+* Add option to reset to default DNS servers (Maybe phone restart needed currently)
+* Add option to import and option to export app preferences
+* Smaller input field text
+* Improve audio player icons for touch availability
+* Hide button in video call after timeout
+* Fix and improve private message hint
+* Bold nicknames in message bubbles
+* Option to disable custom tab
+* Experimental data export option
+* Update better link movement method version
+* Try to fix occasional sorting crashes
+* Adding further strings
+* Update translations

@@ -1,0 +1,18 @@
+* Fix inline Namenseditierung
+* Zeige die Tastatur, wenn Antwort gestartet wird
+* Option hinzufügen, um Reaktionen zu deaktivieren
+* Neue Option, um unverschlüsselte Nachricht nach oben zu heften
+* Neue Option zum Beschriftungen von Dateien
+* Audio-Feedbackschleife auf einigen Geräten verhindern
+* Erlaube das Scannen von HTTPS-basierten Aufforderungen zur Arbeit
+* Ungelesene Nachrichtenzählung in der unteren Navigation anzeigen
+* Einstellung, um Links von einfachen Chat-Adressen anzuzeigen
+* Ordner für Audiodateien hinzufügen
+* Implementierung der XMPP Anbieterliste
+* Option um bei einem eigenen XMPP Server zu registrieren
+* Erlaube die Auswahl des Textes in der Kommandozeile
+* Ping MUCs aggressiver
+* Löschen/Kontakt hinzufügen, löschen/hinzufügen Lesezeichen, verlassen/löschen Räumen Schaltflächen
+* Neues Verschlüsselungsschloss-Symbol
+* Aktualisierte Übersetzungen
+* Repariere den Absturz, wenn auf eine gesuchte Nachricht geantwortet wird
